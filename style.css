@@ -1,31 +1,9 @@
 body{
-    background-color: #902b2b;
-    
+    background-color: #395b95 !important;
 }
-#logo{
-    width: 214px;
-    height: 200px;
-    left: 200px;
-    margin-top: 24px;
-    border-radius: 50%;
-    background: #C4C4C4;
+#nav{
+    border: solid white;
+    padding: 5px;
+    border-radius: 10px;
 }
-.lander{
-    text-align: cent
 
-}
-form{
-    background-color: aqua;
-    padding: 30px 20px 30px 20px;
-    border-radius: 20px;
-    margin-top: 50px;
-}   
-button{
-    text-align: center;
-    color: white;
-    
-
-}
-button::after{
-    background-color: yellowgreen;
-}
