@@ -29,12 +29,23 @@
             </div>
             <div class="col-md-6">
                 <div class="form">
-                    <div class="row mb-3">
-                        <label for="colFormLabel" class="col-sm-2 col-form-label">Name</label>
-                        <div class="col-sm-10">
-                          <input type="email" class="form-control" id="colFormLabel" placeholder="kindly fill your name here">
-                        </div>
-                      </div>
+                    <form action="">
+                        
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" placeholder="Input your Name" id="username">
+                        <br> <br>
+                        <label for="date">Date of Birth </label>
+                        <input type="date" class="form-control" placeholder="Select date" id="date">
+                        <br><br>
+                        <label for="gender">Gender</label>
+                        <select class="form-select" id="inlineFormSelectPref">
+                            <option selected>Choose...</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                            
+                          </select><br><br>
+                          <button class="bg-success" type="submit">Submit</button>
+                      </form>
 
                 </div>
 
