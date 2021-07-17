@@ -12,51 +12,78 @@
 </head>
 
 <body>
-    <!-- Navbar ensd here -->
+
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
           <a href="#" class="navbar-brand" id="nav">Akana Naming System</a>
-  
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navmenu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-         
-        </div>
+         </div>
       </nav>
 
+    <!-- Navbar ensd here -->
+ <div class="container content">
+     <div class="row"> 
+        <div class="col-md-6">
+            <div class="jumbotron p-0 left">
+                <div class="overlay">
+                  <h3 class="text-center headtitle">About Akan Naming System</h3>
+                  <hr class="my-4">
+                  <img src="assets/ghanian.jpg" alt="" class="rounded-circle" height="120">
+                  <p class="p-text">
+                    The Akan people of Ghana frequently name their children after the day of the week
+                     they were born and the order in which they were born. These "day names" have 
+                     further meanings concerning the soul and character of the person. Middle names 
+                     have considerably more variety and can refer to their birth order, twin status,
+                      or an ancestor's middle name.
+                  </p>
+                    <p class="footertxt text-center">Let's Help you determine your Akan Name!</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="jumbotron p-0 right">
+                  <div class="overlay2  ">
+                    <form>
+                        <!-- <label for="name">Name</label>
+                        <input type="text" name="username" id="username" placeholder="KIndly put your Name:">
+                        <br> <br> -->
+                        <label for="date">Date</label>
+                        <input type="number" name="date" id="date" placeholder="Kindly input date">
+                        <br><br>
+                        <label for="month">Month</label>
+                        <input type="number" name="month" id="month">
+                        <br><br>
+                        <label for="year">Y.O.B</label>
+                        <input type="number" name="year" id="year">
+                        <br><br>
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender">
+                            <option value=""></option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select><br><br>
+                        <button type="submit" onclick="validator()">Submit</button>
+                        <br><br>
+                        <input type="text" name="" id="" style="border-radius: 10px;">
+                        
+                        </form> 
+                  </div>
 
+              </div>
+          </div>
+     </div>
+
+ </div>
+
+
+<!-- Into ends here -->
 <div class="container">
-    <form>
-        <label for="name">Name</label>
-        <input type="text" name="username" id="username" placeholder="KIndly put your Name:">
-        <br> <br>
-        <label for="date">Date</label>
-        <input type="number" name="date" id="date" placeholder="Kindly input date">
-        <br><br>
-        <label for="month">Month</label>
-        <input type="number" name="month" id="month">
-        <br><br>
-        <label for="year">Y.O.B</label>
-        <input type="number" name="year" id="year">
-        <br><br>
-        <label for="gender">Gender</label>
-        <select name="gender" id="gender">
-            <option value=""></option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select><br><br>
-        <button type="submit" onclick="validator()">Submit</button>
+ 
+    
 
-    </form>
-<script src="system.js"></script>
 </div>
-  
+
+
+<script src="system.js"></script>  
 </body>
 
 </html>
