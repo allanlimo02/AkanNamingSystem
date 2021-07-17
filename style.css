@@ -1,22 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
 body{
-    background-color: #395b95 !important;
+  background-color: #c8dad3;
 }
-#nav{
-    border: solid white;
-    padding: 5px;
-    border-radius: 10px;
+h1{
+  color: #ffffff;
 }
-form{
+.content{
+    width: 100% !important;
     margin-top: 100px;
-    background-color: thistle;
-    padding: 20px 0px 50px 40px;
-    width: 30%;
-    border-radius: 20px;
 }
-button{
-    background-color: green;
-    border-radius: 30px !important;
-    text-align: center;
-    padding: 10px;
-    color: white;
+.parent{
+  margin-top: 10px;
+  margin-bottom: 0;
+  height: 670px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: #626f92;
+  box-shadow: 1px 0px 2px #ffffff;
+}
+.left{
+  background-image: url('assets/ghanian.jpgx');
+  background-size: center;
+  height: 670px;
+  border-radius: 10px 0 0 10px;
+  margin: 0;
+}
+.overlay{
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px 0 0 5px;
+  height: 670px;
+}
+.headtitle{
+  font-size: 36px;
+  color: white;
+  padding-top: 20px;
+  font-weight: bolder;
+  font-family: system-ui;
+}
+.top-form{
+  margin-top: 30px;
+}
+.labels{
+  font-family: monospace;
+  font-weight: lighter;
+  font-size: 25px;
+  color: #6150c1;
+}
+.p-text{
+  margin: 30px 30px 30px 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Khula', sans-serif;
+}
+.genders{
+  margin-left: 50px;
+}
+.btn{
+  margin-left: 50px;
+  margin-top: 20px;
+  height: 45px;
+  width: 200px;
+  border-radius: 20px;
+}
+.footertxt{
+  color: #fdd043;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 80px 20px 20px 10px;
+}
+#result{
+  margin-top: 30px;
+  color: #000000;
+  font-size: 28px;
+}
+.rounded-circle{
+  margin-left: 40%;
 }
