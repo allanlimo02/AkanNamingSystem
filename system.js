@@ -1,118 +1,123 @@
-var cc=document.getElementById('century');
-var dd= document.getElementById('day');
-var mm=document.getElementById('month');
-var yy=document.getElementById('year');
-var gender=document.getElementById('gender');
 
+function val(){
+  var uname=document.getElementById("uname").value;
+  var cc=document.getElementById("century").value;
+  var yy=document.getElementById("age").value;
+  var mm=document.getElementById("month").value;
+  var dd=document.getElementById("date").value;
 
-var d=( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7
-
-
-let daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
-let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-
-
-
-
-
-
-function validator(){
-    if(cc.value==''&& cc.length==2){
-        alert('Century cant be blank');
-        username.focus();
-        return false;
-        
-    }else
-    if (yy.value==''||yy.length==2){
-        alert('Enter a valid Year value');
-        yy.focus();
-        return false;
-        
-    }else
-    if (mm==''||mm.value>12){
-        alert('Input a valid value for month');
-        month.focus();
-        return false;
-    }
-    if(year=='' && year.length !==4){
-        alert('Input a valid year');
-        year.focus();
-        return false;
-    }
-    if (gender.value ==''){
-        alert(' Gender cant be blank');
-        gender.focus();
-        return false;
-
-    }else{
-        console.log("All set")
-    }   
-}
-
-function checkGender(){
-    
-    if(gender.value =='male' ){
-        var gn = "male";
-    }else if(gender.value == 'female'){
-        var gen = "female";
-    }else {
-      console.log("pass");//Test the radio buttons
-    }
-      switch(gender){
-          case gender = "male":
-                switch(day){
-                  case (0 || -0):
-                    document.getElementById("result").innerHTML = "The day is on a sunday." + "  " + "Your akan name is " + maleNames[0];
-                  break;
-                  case (1 || -1):
-                    document.getElementById("result").innerHTML = "The day is on a monday." + " " + "Your akan name is " + maleNames[1];
-                  break;
-                  case (2 || -2):
-                    document.getElementById("result").innerHTML = "The day is on a tuesday." + " " + "Your akan name is " + maleNames[2];
-                  break;
-                  case (3 || -3):
-                    document.getElementById("result").innerHTML = "The day is on a wednesday." + " " + "Your akan name is "+ maleNames[3];
-                  break;
-                  case (4 || -4):
-                    document.getElementById("result").innerHTML = "The day is on a thursday." + " " + "Your akan name is " + maleNames[4];
-                  break;
-                  case (5 || -5):
-                    document.getElementById("result").innerHTML = "The day is on a friday." + " " + "Your akan name is " + maleNames[5];
-                  break;
-                  case (6 || -6):
-                    document.getElementById("result").innerHTML = "The day is on a saturday." + " " + "Your akan name is " + maleNames[6];
-                  break;
-                  default:
-                  // console.console.log("Pass");//Test male case
-                }
-          break;
-          case gender = "female":
-                  switch(day){
-                    case 0 || -0:
-                      document.getElementById("result").innerHTML = "The day is on a sunday." + "  " + "Your akan name is  akosua";
-                    break;
-                    case 1 || -1:
-                      document.getElementById("result").innerHTML = "The day is on a monday." + " " + "Your akan name is adwoa ";
-                    break;
-                    case 2 || -2:
-                      document.getElementById("result").innerHTML = "The day is on a tuesday." + " " + "Your akan name is abenaa";
-                    break;
-                    case 3 || -3:
-                      document.getElementById("result").innerHTML = "The day is on a wednesday." + " " + "Your akan name is akua";
-                    break;
-                    case 4 || -4:
-                      document.getElementById("result").innerHTML = "The day is on a thursday." + " " + "Your akan name is yaa";
-                    break;
-                    case 5 || -5:
-                      document.getElementById("result").innerHTML = "The day is on a friday." + " " + "Your akan name is afua";
-                    break;
-                    case 6 || -6:
-                      document.getElementById("result").innerHTML = "The day is on a saturday." + " " + "Your akan name is ama";
-                    break;
   
-                }
-          break
-          default:
-          console.log("pass");//Test gender switch
-}
-}  
+  // Form Validator 
+  if(uname==''){
+      window.alert('Kindly input a valid Name');
+      uname.focus();  
+      return false;
+
+  }
+   if(cc=='' ){
+      window.alert('Kindly input a valid century');
+      cc.focus();  
+      return false;
+
+  }
+  if(yy==''){
+      window.alert('Input a valid year');
+      yy.focus();
+      return false;
+
+  }
+  else if(mm==''){
+      window.alert('Input a valid month');
+      mm.focus();
+      return false;
+
+  }
+  else if(mm>=13){
+      window.alert('Input a valid month');
+      mm.focus();
+      return false;
+
+  }
+  else if(dd==''){
+      window.alert('Input a valid date');
+      dd.focus();
+      return false;
+
+  }
+ else  if(dd>=31){
+      window.alert('Input a valid date');
+      mm.focus();
+      return false;
+
+  }
+
+
+  
+ //return true;
+
+ var dCalc=parseInt((((cc/4) -2*cc-1) + ((5*yy/4)) + ((26*(mm+1)/10)) + dd )%7);
+
+ var gmale=document.getElementById("malegender").checked;
+ var gfemale=document.getElementById("femalegender").checked;
+ 
+  if(gmale == false && gfemale == false){
+     alert("Select your gender")
+ }
+ 
+ 
+ var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+  var male =["Kwasi","Kwadwo","Kwabena","Kwaku","yaw","Kofi","Kwame"];
+  var female=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+  
+  if(dCalc==0 && gmale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+male[0]+ "\n and you were born on: "+days[0])
+  }
+  else if(dCalc==1 && gmale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+male[1]+ "\n and you were born on: "+days[1])
+  }
+  else if(dCalc==2 && gmale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+male[2]+ "\n and you were born on: "+days[2])
+  }
+  else if(dCalc==3 && gmale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+male[3]+ "\n and you were born on: "+days[3])
+  }
+  else if(dCalc==4 && gmale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+male[4]+ "\n and you were born on: "+days[4])
+  }
+  else if(dCalc==5 && gmale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+male[5]+ "\n and you were born on: "+days[5])
+  }
+  else if(dCalc==6 && gmale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+male[6]+ "\n and you were born on: "+days[6])
+  }
+  else if(dCalc==0 && gfemale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+female[0]+ "\n and you were born on: "+days[0])
+  }
+  else if(dCalc==1 && gfemale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+female[1]+ "\n and you were born on: "+days[1])
+  }
+  else if(dCalc==2 && gfemale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+female[2]+ "\n and you were born on: "+days[2])
+  }
+  else if(dCalc==3 && gfemale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+female[3]+ "\n and you were born on: "+days[3])
+  }
+  else if(dCalc==4 && gfemale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+female[4]+ "\n and you were born on: "+days[4])
+  }
+  else if(dCalc==5 && gfemale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+female[5]+ "\n and you were born on: "+days[5])
+  }
+  else if(dCalc==6 && gfemale==true){
+      window.alert("Dear "+uname+",\n Your Akana name is: "+female[6]+ "\n and you were born on: "+days[6])
+  }
+  else {
+      alert("invalid inputs.")
+  }
+
+  
+  
+
+
+
+};

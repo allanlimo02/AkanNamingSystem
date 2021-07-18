@@ -42,30 +42,17 @@
           <div class="col-md-6">
               <div class="jumbotron p-0 right">
                   <div class="overlay2  ">
-                    <form>
-                        <label for="name">Century</label>
-                        <input type="text" name="century" id="century" placeholder="KIndly put your Name:">
-                        <br> <br>
-                        <label for="date">Year</label>
-                        <input type="number" name="date" id="year" placeholder="Kindly input date">
-                        <br><br>
-                        <label for="month">Month</label>
-                        <input type="number" name="month" id="month" placeholder="Input Month of birth">
-                        <br><br>
-                        <label for="year">Day</label>
-                        <input type="number" name="year" id="day">
-                        <br><br>
-                        <label for="gender">Gender</label>
-                        <select name="gender" id="gender">
-                            <option value=""></option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select><br><br>
-                        <button type="submit" onclick="checkGender()">Submit</button>
-                        <br><br>
-                        <input type="text" name="" id="result" style="border-radius: 10px;">
-                        
-                        </form> 
+                    <form name="wendot" onsubmit="return val()"> 
+                        <label>Your Name: </label><input type="text" name="uname" id="uname"><br><br>
+                       <label>Century: </label><input type="number" name="name" id="century"><br><br>
+                       <label>Year: </label><input type="number" name="age" id="age"><br><br>
+                       <label>Month: </label><input type="number" name="month" id="month"><br><br>
+                       <label>Date: </label><input type="number" name="date" id="date"><br><br>
+                       <input type="radio" name="gender" id="malegender" value="male">male <br>
+                       <input type="radio" name="gender" id ="femalegender" value="female">female <br>
+                       <input type="submit" name="submit">
+                     
+                     </form>
                   </div>
 
               </div>
