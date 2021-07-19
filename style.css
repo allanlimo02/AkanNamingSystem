@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
+
 body{
   background-color: #c8dad3;
+  font-family: Poppins !important;
 }
 h1{
   color: #ffffff;
@@ -12,23 +13,22 @@ h1{
 .parent{
   margin-top: 10px;
   margin-bottom: 0;
-  height: 670px;
-  padding: 0;
+   padding: 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: #626f92;
   box-shadow: 1px 0px 2px #ffffff;
 }
 .left{
-  background-image: url('assets/ghanian.jpgx');
-  background-size: center;
-  height: 670px;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRHxiOYT8e4VnJt-2fLCwXl9SODT-jP-OLAUxgXuGgst92vcn9hZkWyeXjE9NkYRJSkmY&usqp=CAU');
+  background-size: cover;
+  
   border-radius: 10px 0 0 10px;
   margin: 0;
 }
 .overlay{
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 5px 0 0 5px;
+  border-radius: 25px;
   height: 670px;
 }
 .headtitle{
@@ -76,4 +76,22 @@ h1{
 }
 .rounded-circle{
   margin-left: 40%;
+}
+form{
+  background-color: aqua;
+  margin-top: 50px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.col-md-6{
+  background-image: url(https://images.unsplash.com/photo-1620872912586-69f6e90ec004?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80);
+}
+button{
+  border-radius: 10px !important;
+  background-color: green !important;
+  font-size: 20px !important;
+  padding: 10px;
+  color: white;
+  
 }
